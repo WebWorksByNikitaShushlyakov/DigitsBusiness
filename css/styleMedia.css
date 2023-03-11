@@ -180,7 +180,8 @@
         display: none;
     }
     .bl3_itemRight h2{
-        word-spacing: 10px;
+        word-spacing: 3px;
+        margin-bottom: 40px;
     }
     footer{
         padding: 40px 20px;
@@ -206,6 +207,10 @@
     }
     .block_4 nav{
         display: none;
+    }
+    .block_5 .services_items{
+        border: 1px solid rgb(162, 196, 255);
+        box-shadow: 0 0 0;
     }
 }
 
@@ -289,7 +294,7 @@
 
 @media (max-width: 530px) {
     .slider_container{
-        padding: 150px 0;
+        padding: 140px 0 70px;
     }
     .slider_container::before{
         top: 60px;
@@ -300,6 +305,14 @@
     .block_1 button{
         margin-top: 50px;
     }   
+    .block_4::before{
+        font-size: 40px;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
 }
   
 @media (max-width: 470px) {
@@ -354,7 +367,7 @@
     .footer_tellmi button{
         width: 100%;
     }
-    .slider_container::before{
+    .block_4::before{
         font-size: 40px;
         top: 60px;
         left: 0;
