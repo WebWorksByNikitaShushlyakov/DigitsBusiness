@@ -193,6 +193,10 @@
         padding: 160px 0 120px;
         overflow: auto;
         position: relative;
+        
+    }
+    .slider_container::-webkit-scrollbar {
+        width: 0px;
     }
     .slider_track{
         padding: 0 10px;

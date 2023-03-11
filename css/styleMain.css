@@ -1087,3 +1087,53 @@ footer hr{
     font-size: 10px;
     user-select: none;
 }
+
+
+/* loader */
+.loader{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray_color);
+    width: 100vw;
+    height: 100%;
+    z-index: 20;
+    transform: translateY(0%);
+    transition-duration: 0.3s;
+}
+.loader_item{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 2px solid var(--background_blue); */
+    position: relative;
+    z-index: 22;
+}
+.loader_item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 21;
+    /* box-shadow: -5px 0 10px inset var(--background_blue), -2px 0 5px var(--background_blue); */
+    border-left: 2px solid var(--background_blue);
+    animation-name: animLoader;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes animLoader {
+    0%{ transform: rotate(-90deg);}
+    100%{ transform: rotate(270deg);}
+}
+.pageIsLoaded{
+    transform: translateY(-100%);
+}
+.loaderNone{
+    display: none;
+}
+.scrollHidden{
+    overflow: hidden;
+}

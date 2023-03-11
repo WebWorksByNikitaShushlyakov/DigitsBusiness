@@ -60,3 +60,15 @@ document.querySelector('.menu_burger').addEventListener('click', function(e){
         }
     });
 })
+
+
+// Loader
+window.addEventListener('load',  setTimeout(loaded, 2000))
+function loaded(){
+    document.querySelector('.loader').classList.add('pageIsLoaded')
+    document.querySelector('body').classList.remove('scrollHidden')
+    setTimeout( loaderNone, 1000 )
+}
+function loaderNone(){
+    document.querySelector('.loader').classList.add('loaderNone')
+}
